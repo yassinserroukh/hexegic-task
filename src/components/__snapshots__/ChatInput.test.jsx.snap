@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ChatInput should render the input field and send button 1`] = `
+<div>
+  <div
+    class="input-container"
+  >
+    <div
+      class="input-wrapper"
+    >
+      <input
+        class="input-field"
+        placeholder="Ask about UK cyber security, defence, or business documentation..."
+        type="text"
+        value=""
+      />
+      <button
+        class="send-button"
+        disabled=""
+      >
+        Send
+      </button>
+    </div>
+    <div
+      class="settings"
+    >
+      <div>
+        Mode:
+        <select
+          class="mode-selector"
+        >
+          <option
+            value="contextual"
+          >
+            Contextual AI
+          </option>
+          <option
+            value="semantic"
+          >
+            Semantic Search
+          </option>
+          <option
+            value="regular"
+          >
+            Direct AI
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+`;
