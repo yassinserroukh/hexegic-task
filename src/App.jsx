@@ -7,7 +7,6 @@ import {
   llmRegularQuestion,
   semanticQuery,
 } from './api/api.js';
-import { semantic } from './api/semantic.js';
 
 function App() {
   const [messages, setMessages] = useState([]);
@@ -35,7 +34,7 @@ function App() {
         break;
 
       case 'semantic':
-        response = semantic;
+        response = await semanticQuery(query);
         responseText = 'Found relevant document passages:';
         sources = response.results || [];
         break;
