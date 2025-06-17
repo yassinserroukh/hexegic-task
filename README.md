@@ -1,11 +1,37 @@
-# React + Vite
+# MOD Documentation Chat System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An intelligent AI-powered chat application that provides users with different levels of responses from UK government documents on cyber security, defence, and business topics. The system offers three distinct search modes to cater to different query types and user needs.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Multiple Search Modes
+- **Contextual AI**: Maintains conversation context for follow-up questions and natural dialogue
+- **Semantic Search**: Finds and returns relevant document passages based on semantic similarity
+- **Direct AI**: Provides direct answers without maintaining conversation context
+
+## Endpoints
+
+- `/semantic_query` - Returns responses based on semantic similarity
+- `/llm_contextual_search` - Provides contextual AI responses with conversation memory
+- `/llm_regular_question` - Delivers direct AI answers without context retention
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm install`
+
+Installs dependencies for building, testing and running the react application
+
+### `npm run dev`
+
+Launches the react application on port 5173.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.
+
+### `npm run build`
 
 ## Expanding the ESLint configuration
 
