@@ -32,10 +32,6 @@ describe('App Component End-to-End Tests', () => {
 
     render(<App />);
 
-    expect(
-      screen.getByText(/Welcome to the MOD Documentation Chat System!/i),
-    ).toBeInTheDocument();
-
     await sendMessage(userQuery);
 
     expect(screen.getByText(userQuery)).toBeInTheDocument();

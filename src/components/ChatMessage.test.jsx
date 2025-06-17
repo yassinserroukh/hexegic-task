@@ -1,18 +1,28 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import ChatMessage from './ChatMessage.jsx';
-import { semantic } from '../api/semantic.js';
 
 const messageData = (isUser = true) => {
   return {
     text: 'Message text',
     isUser: isUser,
-    sources: semantic.results,
+    sources: [
+      {
+        chunk: 'Chunk 1',
+        title: 'Title 1',
+        url: 'https://www.gov.uk/',
+      },
+      {
+        chunk: 'Chunk 2',
+        title: 'Title 2',
+        url: 'https://www.gov.uk/',
+      },
+    ],
   };
 };
 
 test('renders default', () => {
-  const container = render(<ChatMessage message={messageData} />);
+  const container = render(<ChatMessage message={messageData()} />);
   expect(container).toMatchSnapshot();
 });
 

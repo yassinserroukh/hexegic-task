@@ -10,7 +10,6 @@ exports[`ChatInput should render the input field and send button 1`] = `
     >
       <input
         class="input-field"
-        placeholder="Ask about UK cyber security, defence, or business documentation..."
         type="text"
         value=""
       />

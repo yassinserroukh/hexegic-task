@@ -6,23 +6,145 @@ exports[`renders default 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="message assistant"
+        class="message user"
         data-testid="message-container"
       >
         <div
           class="message-content"
-        />
+        >
+          Message text
+          <div
+            class="sources"
+          >
+            <div
+              class="sources-title"
+            >
+              Sources:
+            </div>
+            <div
+              class="source-item"
+            >
+              <div
+                class="source-title"
+              >
+                Title 1
+              </div>
+              <div
+                class="source-content"
+              >
+                Chunk 1
+              </div>
+              <div
+                class="source-url"
+              >
+                <a
+                  href="https://www.gov.uk/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  View Source
+                </a>
+              </div>
+            </div>
+            <div
+              class="source-item"
+            >
+              <div
+                class="source-title"
+              >
+                Title 2
+              </div>
+              <div
+                class="source-content"
+              >
+                Chunk 2
+              </div>
+              <div
+                class="source-url"
+              >
+                <a
+                  href="https://www.gov.uk/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  View Source
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="message assistant"
+      class="message user"
       data-testid="message-container"
     >
       <div
         class="message-content"
-      />
+      >
+        Message text
+        <div
+          class="sources"
+        >
+          <div
+            class="sources-title"
+          >
+            Sources:
+          </div>
+          <div
+            class="source-item"
+          >
+            <div
+              class="source-title"
+            >
+              Title 1
+            </div>
+            <div
+              class="source-content"
+            >
+              Chunk 1
+            </div>
+            <div
+              class="source-url"
+            >
+              <a
+                href="https://www.gov.uk/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                View Source
+              </a>
+            </div>
+          </div>
+          <div
+            class="source-item"
+          >
+            <div
+              class="source-title"
+            >
+              Title 2
+            </div>
+            <div
+              class="source-content"
+            >
+              Chunk 2
+            </div>
+            <div
+              class="source-url"
+            >
+              <a
+                href="https://www.gov.uk/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                View Source
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>,
   "debug": [Function],
